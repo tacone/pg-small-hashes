@@ -1,3 +1,7 @@
+-- functions to make hashes smaller
+-- derived from: https://stackoverflow.com/a/36061430/358813
+-----------------------------------------------------------------
+
 -- Converts a 16 byte hash to a 8 byte hash 
 create or replace function small_hash(hash16 bytea) returns bytea
 as $$
