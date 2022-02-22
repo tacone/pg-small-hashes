@@ -17,7 +17,7 @@ begin
   end loop;
   return result;
 end;
-$$ language plpgsql immutable;
+$$ language plpgsql immutable parallel safe;
 
 --Converts a 16 byte hash to a 4 byte hash
 create or replace function tiny_hash(hash16 bytea) returns bytea
@@ -36,4 +36,4 @@ begin
   end loop;
   return result;
 end;
-$$ language plpgsql immutable;
+$$ language plpgsql immutable parallel safe;
