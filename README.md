@@ -1,8 +1,8 @@
 # Postgres Small Hashes
 
-Sample postgresfunctions to reduce the size of a 16 byte hash, without loosing more entropy than necessary.
+Sample postgres functions to reduce the size of a 16 bytes hash, without losing more entropy than necessary.
 
-Note that this is not a cryptographic hash, it is meant to be used to reduce the size of a hash to diminuish the stored or displayed size.
+Note that this functions are not meant to be used for security purposes, they are meant to be used to reduce the size of a hash to diminuish the stored size or the displayed size.
 
 ```sql
 -- sample uses to lossy compress MD5s and UUIDs
